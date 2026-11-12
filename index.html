@@ -12,26 +12,27 @@ html
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Cormorant+Garamond:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+<link href="styles.css?v=6.0" rel="stylesheet"/>
 </head>
 <body class="locked">
 <div aria-hidden="true" class="grain"></div>
-<div aria-label="Invitation cover" aria-modal="true" class="intro intro--video" id="intro" role="dialog"><div class="intro-premium">
-<p class="intro-premium__bismillah arabic" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-<p class="intro-premium__eyebrow">YOU ARE CORDIALLY INVITED</p>
-<div class="video-stage" id="videoStage">
-<video aria-label="A burgundy envelope opening to reveal an ivory invitation card" class="envelope-video" id="envelopeVideo" muted="" playsinline="" poster="assets/envelope-poster.jpg" preload="auto"><source src="assets/envelope-opening.mp4" type="video/mp4"/></video>
-<div aria-label="Nabeel Moideen and Farhana Musthafa" class="video-name-overlay" id="videoNameOverlay">
-<span>THE NIKAH OF</span>
-<img alt="Nabeel Moideen" src="assets/name-groom-burgundy.png"/>
-<b>&amp;</b>
-<img alt="Farhana Musthafa" src="assets/name-bride-burgundy.png"/>
-<small>09 · 01 · 2027</small>
+<div aria-label="Invitation opening" aria-modal="true" class="intro intro--editorial" id="intro" role="dialog">
+  <div aria-hidden="true" class="editorial-frame"></div>
+  <div class="editorial-cover">
+    <p class="editorial-topline editorial-appear">A CELEBRATION OF FAITH &amp; LOVE</p>
+    <p class="editorial-bismillah arabic editorial-appear" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <div class="editorial-rule editorial-appear" aria-hidden="true"><span>✦</span></div>
+    <p class="editorial-title editorial-appear">The Nikah of</p>
+    <div class="editorial-names editorial-appear" aria-label="Nabeel Moideen and Farhana Musthafa">
+      <img src="assets/name-groom-burgundy.png" alt="Nabeel Moideen" />
+      <span>&amp;</span>
+      <img src="assets/name-bride-burgundy.png" alt="Farhana Musthafa" />
+    </div>
+    <p class="editorial-date editorial-appear">SATURDAY · 09 JANUARY 2027 · 5:30 PM</p>
+    <button class="open-editorial editorial-appear" id="openInvitation" type="button">OPEN INVITATION <span aria-hidden="true">↗</span></button>
+    <p class="editorial-footer editorial-appear">A beautiful beginning, blessed by Allah</p>
+  </div>
 </div>
-</div>
-<button class="open-envelope" id="openInvitation" type="button">✧   OPEN INVITATION   ✧</button>
-<p class="intro-premium__footer">A special day, written by Allah’s grace</p>
-</div></div>
 <header class="site-header" id="header">
 <a aria-label="Back to top" class="brand" href="#home"><span class="brand__initials">N&amp;F</span></a>
 <nav aria-label="Page sections"><a href="#celebration">Nikah</a><a href="#family">Families</a><a href="#rsvp">RSVP</a></nav>
@@ -76,8 +77,7 @@ html
 </div>
 <button class="scratch-reveal-btn" id="revealDate" type="button">Tap to reveal the date instead ↗</button></section><section class="section celebration" id="celebration">
 <div aria-hidden="true" class="pattern-wing pattern-wing--left"></div><div aria-hidden="true" class="pattern-wing pattern-wing--right"></div>
-<div class="section-kicker reveal">THE CELEBRATION</div>
-<h2 class="section-heading section-heading--light reveal">The <em>Nikah</em></h2>
+<h2 class="section-heading section-heading--light reveal">Nikah</h2>
 <div class="event-card reveal">
 <div class="event-card__crest">✧</div>
 <p class="event-card__label">IN SHA ALLAH</p>
@@ -136,6 +136,6 @@ html
 </main>
 <div aria-hidden="true" class="music-player" id="musicPlayer"></div>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
-<script defer="" src="script.js"></script>
+<script defer="" src="script.js?v=6.0"></script>
 </body>
 </html>
