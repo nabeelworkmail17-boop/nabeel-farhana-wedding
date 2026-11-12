@@ -12,25 +12,34 @@ html
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Cormorant+Garamond:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css?v=6.0" rel="stylesheet"/>
+<link href="styles.css?v=7.0" rel="stylesheet"/>
 </head>
 <body class="locked">
 <div aria-hidden="true" class="grain"></div>
-<div aria-label="Invitation opening" aria-modal="true" class="intro intro--editorial" id="intro" role="dialog">
-  <div aria-hidden="true" class="editorial-frame"></div>
-  <div class="editorial-cover">
-    <p class="editorial-topline editorial-appear">A CELEBRATION OF FAITH &amp; LOVE</p>
-    <p class="editorial-bismillah arabic editorial-appear" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-    <div class="editorial-rule editorial-appear" aria-hidden="true"><span>✦</span></div>
-    <p class="editorial-title editorial-appear">The Nikah of</p>
-    <div class="editorial-names editorial-appear" aria-label="Nabeel Moideen and Farhana Musthafa">
-      <img src="assets/name-groom-burgundy.png" alt="Nabeel Moideen" />
-      <span>&amp;</span>
-      <img src="assets/name-bride-burgundy.png" alt="Farhana Musthafa" />
+<div aria-label="Invitation opening" aria-modal="true" class="intro intro--heritage" id="intro" role="dialog">
+  <div class="heritage-intro-frame" aria-hidden="true"></div>
+  <div class="heritage-intro-content">
+    <p class="heritage-arabic arabic" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <p class="heritage-kicker">YOU ARE INVITED TO OUR NIKAH</p>
+    <p class="heritage-inshallah arabic" dir="rtl" lang="ar">إِنْ شَاءَ اللَّهُ</p>
+    <div class="heritage-envelope-scene" id="heritageEnvelope" aria-label="Animated invitation envelope">
+      <div class="heritage-envelope-back"></div>
+      <div class="heritage-invitation-card">
+        <div class="heritage-card-border">
+          <span class="heritage-card-ornament" aria-hidden="true">✧</span>
+          <span class="heritage-card-label">THE NIKAH OF</span>
+          <img src="assets/name-groom-burgundy.png" alt="Nabeel Moideen" />
+          <span class="heritage-card-and">&amp;</span>
+          <img src="assets/name-bride-burgundy.png" alt="Farhana Musthafa" />
+          <span class="heritage-card-date">09 JANUARY 2027 · 5:30 PM</span>
+        </div>
+      </div>
+      <div class="heritage-envelope-pocket" aria-hidden="true"></div>
+      <div class="heritage-envelope-flap" aria-hidden="true"></div>
+      <div class="heritage-envelope-seal" aria-hidden="true">N<span>&amp;</span>F</div>
     </div>
-    <p class="editorial-date editorial-appear">SATURDAY · 09 JANUARY 2027 · 5:30 PM</p>
-    <button class="open-editorial editorial-appear" id="openInvitation" type="button">OPEN INVITATION <span aria-hidden="true">↗</span></button>
-    <p class="editorial-footer editorial-appear">A beautiful beginning, blessed by Allah</p>
+    <button id="openInvitation" class="heritage-open" type="button">OPEN INVITATION <span aria-hidden="true">✧</span></button>
+    <p class="heritage-instruction" id="heritageInstruction">Tap to open the invitation</p>
   </div>
 </div>
 <header class="site-header" id="header">
@@ -136,6 +145,6 @@ html
 </main>
 <div aria-hidden="true" class="music-player" id="musicPlayer"></div>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
-<script defer="" src="script.js?v=6.0"></script>
+<script defer="" src="script.js?v=7.0"></script>
 </body>
 </html>

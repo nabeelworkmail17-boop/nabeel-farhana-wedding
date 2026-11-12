@@ -26,11 +26,14 @@ function finishOpening(){
  setTimeout(()=>{intro.setAttribute('aria-hidden','true');intro.style.display='none';},1200);
 }
 $('openInvitation').addEventListener('click',()=>{
- if(opened)return;
- const button=$('openInvitation');button.disabled=true;
+ if(opened || intro.classList.contains('heritage-opening'))return;
+ $('openInvitation').disabled=true;
+ $('openInvitation').textContent='OPENING INVITATION';
  startMusic();
- intro.classList.add('editorial-exit');
- setTimeout(finishOpening,850);
+ intro.classList.add('heritage-opening');
+ // The flap opens first, the ivory invitation card rises, then the page is revealed.
+ setTimeout(()=>intro.classList.add('heritage-transition'),2650);
+ setTimeout(finishOpening,3350);
 },{once:true});
 function countdown(){let left=WEDDING_DATE-new Date();if(left<=0){['days','hours','minutes','seconds'].forEach(k=>$(k).textContent='00');$('countdownDone').hidden=false;return}let parts={days:Math.floor(left/86400000),hours:Math.floor(left/3600000)%24,minutes:Math.floor(left/60000)%60,seconds:Math.floor(left/1000)%60};for(let [k,v]of Object.entries(parts))$(k).textContent=String(v).padStart(2,'0')};countdown();setInterval(countdown,1000);
 if('IntersectionObserver'in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.10});document.querySelectorAll('.reveal:not(.show)').forEach(el=>io.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show'));
