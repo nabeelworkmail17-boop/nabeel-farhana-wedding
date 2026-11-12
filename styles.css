@@ -72,3 +72,79 @@ body{background:var(--cream)}
 @keyframes heartFloat{50%{transform:translateY(-14px) rotate(12deg)}}
 @media(max-width:650px){.brand__name{font-size:10px;max-width:135px}.site-header nav{gap:10px}.site-header nav a{font-size:9px}.hero__names{font-size:clamp(34px,9vw,54px)}.hero__content{padding:0 14px}.envelope-wrap{height:245px;min-height:0}.envelope-card__names{font-size:19px}.heart-trail{right:8px}.intro__top .arabic{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.intro.opening .envelope-card{transform:none}.intro.opening .envelope-flap{transform:none}}
+
+/* V4 — exact supplied wedding palette, burgundy #7a0f0f and peach #ffe8dc */
+:root{--green:#7a0f0f;--deep:#4e090a;--gold:#bb8d71;--gold-light:#ffe8dc;--cream:#ffe8dc;--ivory:#fff4ed;--ink:#4e1d1d;--muted:#815b57;--ruby:#7a0f0f;--peach:#ffe8dc}
+body{background:#ffe8dc;color:#4e1d1d}
+.site-header{background:rgba(90,9,10,.96);border-color:#ffe8dc33}
+.brand__initials{display:block;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:31px;letter-spacing:.06em;color:#ffe8dc}
+.hero{background:radial-gradient(ellipse at 50% 38%,#992c30 0%,#7a0f0f 52%,#430607 100%);color:#ffe8dc}
+.hero__frame,.hero__frame2{border-color:#ffe8dc63}
+.hero__subtitle,.hero__date,.hero__time,.hero__names{color:#ffe8dc}
+.hero__shine{background:#ffe8dc0f}
+.celebration{background:radial-gradient(ellipse at 50% 30%,#932629 0%,#7a0f0f 60%,#4b0809 100%)}
+.dua-section{background:#7a0f0f}
+.footer{background:#4e090a;border-top-color:#bd7271}
+.family-section,.scratch-section{background:#ffe8dc}
+.section--ivory,.welcome,.rsvp-section{background:#fff4ed}
+.event-card{background:#641011ed;border-color:#ffe8dc70}
+.event-card__day,.event-card__venue,.event-card__month,.event-card__label{color:#ffe8dc}
+.event-card__actions .button{border-color:#ffe8dc99;color:#ffe8dc}
+.button--dark,.open-envelope{background:#7a0f0f;color:#ffe8dc;border-color:#7a0f0f}
+.family-card{background:#fff6f0;border-color:#a44f4f60}
+.family-card__parents,.family-card__address,.section-kicker,.quran-arabic,.verse-source{color:#7a0f0f}
+.heart-trail{color:#a03539}.heart-trail span:nth-child(2){color:#7a0f0f}
+/* Invitation-video overlay: playback is triggered by the OPEN INVITATION user gesture. */
+.intro--video{background:#ffe8dc;color:#7a0f0f;overflow:hidden;z-index:100}
+.intro-premium{width:100%;height:100%;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:16px 12px 19px}
+.intro-premium__bismillah{font-size:clamp(24px,4.4vw,39px);line-height:1.8;margin:0;color:#7a0f0f;max-width:96%;white-space:normal;overflow-wrap:normal}
+.intro-premium__eyebrow{font-size:10px;font-weight:700;letter-spacing:.27em;margin:0 0 5px;color:#7a0f0f}
+.video-stage{position:relative;flex:1 1 auto;min-height:0;max-height:min(69svh,690px);width:min(88vw,390px);aspect-ratio:9/16;overflow:hidden;box-shadow:0 20px 48px #7a0f0f24;isolation:isolate;background:#6a1325}
+.envelope-video{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(1.05) sepia(.05)}
+.video-name-overlay{position:absolute;left:12%;width:76%;top:39%;display:flex;align-items:center;flex-direction:column;gap:4px;opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s;pointer-events:none;color:#7a0f0f}
+.video-stage.show-names .video-name-overlay{opacity:1;transform:translateY(0)}
+.video-name-overlay span{font-size:8px;letter-spacing:.17em;font-weight:700}
+.video-name-overlay img{display:block;max-width:100%;width:79%;height:auto;object-fit:contain}
+.video-name-overlay b{font:italic 21px 'Cormorant Garamond',serif;line-height:1}
+.video-name-overlay small{font-size:8px;letter-spacing:.12em}
+.intro--video .open-envelope{border:0;margin-top:6px;padding:14px 28px;font-size:11px;letter-spacing:.18em;flex:none;box-shadow:0 5px 17px #7a0f0f20}
+.intro--video.opening .open-envelope{opacity:0;pointer-events:none}
+.intro-premium__footer{font:italic clamp(17px,2.9vw,24px) 'Cormorant Garamond',serif;color:#8c4445;margin:3px 0 0;flex:none}
+/* Orange Avenue names are converted to transparent lettering graphics from supplied original font. */
+.custom-names{display:flex;align-items:center;flex-direction:column;gap:1px;margin:14px auto;max-width:min(86vw,680px)}
+.custom-names img{display:block;max-width:100%;width:auto;height:auto;max-height:clamp(49px,10vw,95px);object-fit:contain}
+.custom-names__and{display:block;color:inherit;font-family:'Cormorant Garamond',serif;font-size:clamp(39px,7vw,65px);line-height:1.05;font-style:italic}
+.couple-script.custom-names{margin:25px auto}.couple-script.custom-names img{max-height:82px}
+.footer__names.custom-names{margin:22px auto;max-width:570px}.footer__names.custom-names img{max-height:70px}
+.family-name-art{display:block;width:min(100%,280px);height:auto;object-fit:contain;margin:8px auto}
+/* Keep Qur'an and bismillah legible and comfortably spaced on narrow screens. */
+.welcome .section-kicker{margin-bottom:32px}
+.big-bismillah{display:block;width:100%;max-width:780px;margin:18px auto 25px!important;padding:0 18px;box-sizing:border-box;font-family:'Amiri',serif;font-size:clamp(21px,4.3vw,43px)!important;font-weight:400;line-height:2.3!important;white-space:normal!important;overflow:visible!important;word-break:normal;text-align:center}
+.hero .bismillah{font-size:clamp(20px,4.1vw,36px);padding:0 7px;line-height:2.2;max-width:100%;overflow-wrap:normal;white-space:normal;margin:0 auto 28px}
+.quran-arabic{line-height:2.2;overflow-wrap:normal;padding:0 10px}
+/* Replace generic scratch card by layered keepsake and refined engraved scratch surface. */
+.scratch-section{position:relative;padding-top:90px;padding-bottom:90px}
+.scratch-ornament{font-size:23px;color:#7a0f0f;margin-bottom:20px}
+.scratch-shell--premium{width:min(85vw,380px);height:260px;border:9px solid #fff8f2;border-radius:2px;box-shadow:0 18px 40px #7a0f0f2a;transform:rotate(-1.4deg);margin:29px auto 18px;overflow:hidden}
+.scratch-under{background:radial-gradient(circle at center,#fff8f1 0%,#ffe8dc 67%,#efc5b5 100%);color:#7a0f0f}
+.scratch-under strong{font:500 96px/.95 'Cormorant Garamond',serif;color:#7a0f0f}
+.scratch-under i{font:18px 'Amiri',serif;margin-top:5px;color:#7a0f0f}
+.scratch-corner{position:absolute;z-index:2;color:#ffe8dc9c;pointer-events:none;font-size:23px}.scratch-corner--tl{left:20px;top:14px}.scratch-corner--br{right:20px;bottom:14px}
+.scratch-shell.scratch-complete .scratch-corner{opacity:0}
+.scratch-reveal-btn{text-decoration:none;color:#7a0f0f;border-bottom:1px solid #7a0f0f80;padding-bottom:5px;font-size:12px}
+@media(max-width:650px){
+ .site-header{padding:0 12px}.brand__initials{font-size:28px}
+ .intro-premium{padding:12px 8px 16px;gap:6px}
+ .intro-premium__bismillah{font-size:clamp(22px,6.5vw,30px);line-height:1.9;text-align:center}
+ .intro-premium__eyebrow{font-size:9px}
+ .video-stage{width:min(82vw,310px);max-height:65svh}
+ .video-name-overlay{top:39%;gap:2px}.video-name-overlay img{width:84%}
+ .intro-premium__footer{font-size:18px}
+ .big-bismillah{font-size:clamp(20px,6vw,29px)!important;padding:0 22px;line-height:2.5!important;margin:20px auto 30px!important}
+ .welcome .section-kicker{margin-bottom:35px}
+ .hero__content{padding:0 14px}.custom-names img{max-height:clamp(35px,8vw,65px)}
+ .hero .bismillah{font-size:clamp(19px,5.4vw,26px);line-height:2.3}
+ .section-heading{overflow-wrap:break-word}
+}
+@media(max-height:690px){.video-stage{max-height:55svh}.intro-premium__bismillah{font-size:24px}.intro-premium__footer{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.video-name-overlay{transition:none}}

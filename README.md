@@ -1,16 +1,16 @@
-# Nabeel Moideen & Farhana Musthafa — Nikah Invitation (updated V2)
+# Nabeel Moideen & Farhana Musthafa — Premium invitation V4
 
-## Publishing to the **existing** GitHub Pages URL
+## Updates
+- Opening uses the supplied vertical envelope-opening video, with rendered name artwork over the ivory reveal card.
+- Primary colors exactly: burgundy `#7a0f0f`, peach `#ffe8dc`.
+- Header initials `N&F`; corrected Arabic Bismillah mobile sizing and spacing.
+- Orange Avenue DEMO typeface used ONLY for the couple's names; embedded as transparent PNG name artwork rendered from the file you supplied, not as a distributed font file.
+- Redesigned interactive scratch date, with accessible reveal button.
+- The supplied MP3 remains embedded and is started when Open Invitation is clicked. Browsers do not allow guaranteed audible autoplay before interaction.
+- Parents, venue, WhatsApp RSVP, countdown, Qur'an Arabic/English, maps, calendar remain.
 
-1. Open https://github.com/nabeelworkmail17-boop/nabeel-farhana-wedding
-2. Replace `index.html`, `styles.css`, `script.js`, and the full `assets` folder (including `assets/background-music.mp3`) using **Add file → Upload files**, then **Commit changes**. Upload all contents of this package to the repository root (not the enclosing folder). Existing files with the same filenames should be replaced, not renamed.
-3. Keep Settings → Pages → Deploy from branch `main` / `(root)`. Do **not** create a new repository.
-4. Website URL stays: https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/
+## Upload to GitHub
+Extract ZIP, select **all items inside** the folder, including `assets/`, and upload through the existing repository's **Add file → Upload files**. Confirm overwriting existing same-path files and **Commit changes**. Keep Pages deployment `main / (root)`. No need to create a new repository.
 
-## Key notes
-- The envelope opens by tapping **Open Invitation**. This is also the browser gesture used to request sound.
-- The supplied MP3 is included as `assets/background-music.mp3`, set to loop. Clicking **Open Invitation** starts it; the Music button mutes/plays it. Browsers can block playback without a tap. Make sure you have permission to publish this recording publicly.
-- RSVP opens WhatsApp for **+91 75103 30497** with the selected Yes/No answer prefilled. The guest must press **Send** in WhatsApp. No server-side storage.
-- Date/timer uses India Standard Time (IST) 9 Jan 2027, 5:30 PM.
-- Scratch reveal works with touch and mouse; an accessible Reveal button is provided.
-- Supplied stage-backdrop PDF was used for the patterned accent.
+## Notes
+The wedding site uses a third-party MP3 and video. Only publish them if you have the rights/permission to make these files public. Orange Avenue DEMO lettering may have license restrictions; check commercial/web usage terms.
