@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Nabeel Farhana Nikah//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:nabeel-farhana-nikah-20270109@invitation.local
+DTSTAMP:20261112T100000Z
+DTSTART:20270109T120000Z
+DTEND:20270109T140000Z
+SUMMARY:Nikah of Nabeel Moideen & Farhana Musthafa
+LOCATION:Labeebas House\, Pothamkandam
+DESCRIPTION:With the blessings of Allah. Nikah at 5:30 PM IST. Venue: https://maps.app.goo.gl/ruK47q7Ax5nZjoDW6
+END:VEVENT
+END:VCALENDAR
