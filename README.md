@@ -9,3 +9,7 @@
 Extract and upload **all files** and `assets` folder to the root of the existing GitHub repository; commit changes. GitHub Pages `main` / `(root)`. Do not upload the ZIP itself. Visit with `?v=7` to bypass cached HTML.
 
 This is a custom approximation of the reference site's envelope interaction, not a copy of its code or assets. Browser audio starts on the OPEN INVITATION gesture. Ensure any audio and font artwork public-hosting rights are in order.
+
+
+## V8 minor opening copy update
+Opening invitation card: removed its date/time, changed opening kicker to “YOU ARE INVITED TO OUR WEDDING” and card label to “THE WEDDING OF”. All other sections remain unchanged.
