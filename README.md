@@ -1,15 +1,16 @@
-# Nabeel Moideen & Farhana Musthafa — Invitation V7
+Nabeel & Farhana Wedding Invitation — V12 — complete GitHub Pages website
 
-## What changed
-- Opening replaced with reference-inspired interactive envelope: tap, flap opens, invitation card rises, page transitions. No video dependency.
-- All decorative serif section headings switched to readable Times New Roman / Times / Georgia.
-- Preserves V6's Burgundy #7A0F0F + Peach #FFE8DC palette, Orange Avenue rendered name artwork, Arabic, MP3, scratch card, date, family information, WhatsApp RSVP.
+WHAT IS NEW
+- WhatsApp / social preview uses the exact user-supplied portrait cover image: assets/nabeel-farhana-whatsapp-cover.png (1024 x 1536).
+- Metadata in index.html uses an absolute image URL and correct image dimensions.
+- Original animated envelope opening remains the first visible website screen.
+- Wedding details, music, calendar, RSVP and interactive sections are unchanged.
 
-## Install
-Extract and upload **all files** and `assets` folder to the root of the existing GitHub repository; commit changes. GitHub Pages `main` / `(root)`. Do not upload the ZIP itself. Visit with `?v=7` to bypass cached HTML.
+UPLOAD
+Extract the ZIP. In your GitHub repository at the root (not inside assets), choose Add file > Upload files. Upload all top-level files plus assets folder contents with their paths preserved. Commit changes. Wait for GitHub Pages to deploy.
 
-This is a custom approximation of the reference site's envelope interaction, not a copy of its code or assets. Browser audio starts on the OPEN INVITATION gesture. Ensure any audio and font artwork public-hosting rights are in order.
+TEST
+Share: https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/?v=12
+Social preview services may cache an old preview. Change the query string or wait for a recrawl if needed.
 
-
-## V8 minor opening copy update
-Opening invitation card: removed its date/time, changed opening kicker to “YOU ARE INVITED TO OUR WEDDING” and card label to “THE WEDDING OF”. All other sections remain unchanged.
+Do not upload the ZIP itself to GitHub Pages; upload the extracted website contents.
