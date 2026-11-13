@@ -1,16 +1,13 @@
-Nabeel & Farhana Wedding Invitation — V12 — complete GitHub Pages website
+Nabeel & Farhana Wedding Invitation V13 — WhatsApp preview repair
 
-WHAT IS NEW
-- WhatsApp / social preview uses the exact user-supplied portrait cover image: assets/nabeel-farhana-whatsapp-cover.png (1024 x 1536).
-- Metadata in index.html uses an absolute image URL and correct image dimensions.
-- Original animated envelope opening remains the first visible website screen.
-- Wedding details, music, calendar, RSVP and interactive sections are unchanged.
+The website STILL opens with the original animated envelope. Its visuals and contents were not redesigned.
 
-UPLOAD
-Extract the ZIP. In your GitHub repository at the root (not inside assets), choose Add file > Upload files. Upload all top-level files plus assets folder contents with their paths preserved. Commit changes. Wait for GitHub Pages to deploy.
+New social preview image: assets/nabeel-farhana-preview-v13.jpg (1200x630 JPEG, with Nabeel, hearts and Farhana visible).
+Open Graph image and dimensions in index.html now target its absolute URL.
 
-TEST
-Share: https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/?v=12
-Social preview services may cache an old preview. Change the query string or wait for a recrawl if needed.
+IMPORTANT: Upload BOTH the updated index.html AND the new assets/nabeel-farhana-preview-v13.jpg. The preview cannot show if that image file is missing from GitHub Pages. You may upload every extracted file to the repository root in one go. Do not place index.html inside a nested folder.
 
-Do not upload the ZIP itself to GitHub Pages; upload the extracted website contents.
+VERIFY:
+1. Visit https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/assets/nabeel-farhana-preview-v13.jpg in your browser. The photo must load. If it gives 404, GitHub did not receive the file at the proper path.
+2. Visit https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/ and check the envelope still works.
+3. In WhatsApp send only https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/?share=13 on a fresh message, wait for the image preview to generate, then send. Cache may prevent immediate results even after a valid deploy.
