@@ -17,24 +17,33 @@ function startMusic(){
 }
 function stopMusic(){localMusic.pause();musicPlaying=false;musicUI()}
 $('musicToggle').addEventListener('click',()=>{if(musicPlaying)stopMusic();else startMusic()});
+// Two-stage opening: supplied cover artwork, then envelope reveal, then invitation.
 let opened=false;
+let opening=false;
+const openingButton=$('openInvitation');
 function finishOpening(){
  if(opened)return;
  opened=true;
  document.body.classList.remove('locked');
  intro.classList.add('intro--gone');
- setTimeout(()=>{intro.setAttribute('aria-hidden','true');intro.style.display='none';},1200);
+ intro.setAttribute('aria-hidden','true');
+ setTimeout(()=>{intro.style.display='none';},850);
 }
-$('openInvitation').addEventListener('click',()=>{
- if(opened || intro.classList.contains('heritage-opening'))return;
- $('openInvitation').disabled=true;
- $('openInvitation').textContent='OPENING INVITATION';
+function beginOpening(){
+ if(opened || opening)return;
+ opening=true;
+ openingButton.disabled=true;
+ openingButton.textContent='OPENING INVITATION…';
+ // Trigger audio within the user gesture (browser autoplay requirement).
  startMusic();
- intro.classList.add('heritage-opening');
- // The flap opens first, the ivory invitation card rises, then the page is revealed.
- setTimeout(()=>intro.classList.add('heritage-transition'),2650);
- setTimeout(finishOpening,3350);
-},{once:true});
+ intro.classList.add('cover-dismissed');
+ // First reveal the envelope; then lift its flap and card.
+ setTimeout(()=>intro.classList.add('heritage-opening'),600);
+ setTimeout(()=>intro.classList.add('heritage-transition'),2850);
+ setTimeout(finishOpening,3500);
+}
+if(openingButton)openingButton.addEventListener('click',beginOpening);
+// Failsafe: allow opening even if other decorative features encounter errors.
 function countdown(){let left=WEDDING_DATE-new Date();if(left<=0){['days','hours','minutes','seconds'].forEach(k=>$(k).textContent='00');$('countdownDone').hidden=false;return}let parts={days:Math.floor(left/86400000),hours:Math.floor(left/3600000)%24,minutes:Math.floor(left/60000)%60,seconds:Math.floor(left/1000)%60};for(let [k,v]of Object.entries(parts))$(k).textContent=String(v).padStart(2,'0')};countdown();setInterval(countdown,1000);
 if('IntersectionObserver'in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.10});document.querySelectorAll('.reveal:not(.show)').forEach(el=>io.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show'));
 // Moving hearts rise as the guest scrolls, echoing the reference's heart scroll motif.
