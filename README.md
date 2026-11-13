@@ -1,12 +1,15 @@
-# Nabeel & Farhana Wedding Invitation — V9 Fixed
+# Nabeel Moideen & Farhana Musthafa — Invitation V7
 
-This folder is ready for GitHub Pages. V9 adds the exact supplied cover page as the initial screen, with a working **OPEN INVITATION** button. Clicking displays the envelope animation, then reveals the existing invitation. Existing wedding details, music, RSVP and scratch-to-reveal card are preserved.
+## What changed
+- Opening replaced with reference-inspired interactive envelope: tap, flap opens, invitation card rises, page transitions. No video dependency.
+- All decorative serif section headings switched to readable Times New Roman / Times / Georgia.
+- Preserves V6's Burgundy #7A0F0F + Peach #FFE8DC palette, Orange Avenue rendered name artwork, Arabic, MP3, scratch card, date, family information, WhatsApp RSVP.
 
-## GitHub upload steps
-1. Open your `nabeel-farhana-wedding` GitHub repository.
-2. Choose **Add file → Upload files**.
-3. Upload **the contents of this ZIP** (index.html, styles.css, script.js, nikah.ics, and the entire `assets` folder), keeping folder paths intact. Replace same-named files.
-4. Click **Commit changes** and wait for GitHub Pages deployment.
-5. Open `https://nabeelworkmail17-boop.github.io/nabeel-farhana-wedding/?v=9` and hard-refresh if necessary.
+## Install
+Extract and upload **all files** and `assets` folder to the root of the existing GitHub repository; commit changes. GitHub Pages `main` / `(root)`. Do not upload the ZIP itself. Visit with `?v=7` to bypass cached HTML.
 
-Do not upload the ZIP itself to the repository: extract its contents first. Maintain paths like `assets/cover-page.png`.
+This is a custom approximation of the reference site's envelope interaction, not a copy of its code or assets. Browser audio starts on the OPEN INVITATION gesture. Ensure any audio and font artwork public-hosting rights are in order.
+
+
+## V8 minor opening copy update
+Opening invitation card: removed its date/time, changed opening kicker to “YOU ARE INVITED TO OUR WEDDING” and card label to “THE WEDDING OF”. All other sections remain unchanged.

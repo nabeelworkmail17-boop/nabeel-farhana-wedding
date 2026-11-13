@@ -1,3 +1,4 @@
+html
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -11,15 +12,11 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&amp;family=Cormorant+Garamond:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css?v=9.0" rel="stylesheet"/>
+<link href="styles.css?v=7.0" rel="stylesheet"/>
 </head>
 <body class="locked">
 <div aria-hidden="true" class="grain"></div>
 <div aria-label="Invitation opening" aria-modal="true" class="intro intro--heritage" id="intro" role="dialog">
-  <div class="wedding-cover" id="weddingCover">
-    <img class="wedding-cover__image" src="assets/cover-page.png" alt="Wedding invitation cover for Nabeel Moideen and Farhana Musthafa" fetchpriority="high" />
-    <button id="openInvitation" class="wedding-cover__button" type="button">OPEN INVITATION <span aria-hidden="true">✧</span></button>
-  </div>
   <div class="heritage-intro-frame" aria-hidden="true"></div>
   <div class="heritage-intro-content">
     <p class="heritage-arabic arabic" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
@@ -40,6 +37,7 @@
       <div class="heritage-envelope-flap" aria-hidden="true"></div>
       <div class="heritage-envelope-seal" aria-hidden="true">N<span>&amp;</span>F</div>
     </div>
+    <button id="openInvitation" class="heritage-open" type="button">OPEN INVITATION <span aria-hidden="true">✧</span></button>
     <p class="heritage-instruction" id="heritageInstruction">Tap to open the invitation</p>
   </div>
 </div>
@@ -146,6 +144,6 @@
 </main>
 <div aria-hidden="true" class="music-player" id="musicPlayer"></div>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
-<script defer="" src="script.js?v=9.0"></script>
+<script defer="" src="script.js?v=7.0"></script>
 </body>
 </html>
